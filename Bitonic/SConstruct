@@ -1,0 +1,4 @@
+
+env = Environment(CC = "/usr/local/bin/gcc", CFLAGS = "-O4 -fopenmp", \
+    LIBS = "-lgomp")
+env.Program(target = "bitonic", source =["bitonic.c"])
